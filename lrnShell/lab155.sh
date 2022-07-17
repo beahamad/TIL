@@ -18,6 +18,7 @@ case $1 in
 	1) msg_1 ;;
 	2) msg_2 ;;
 	3) msg_3 ;;
-	*) echo "Invalid option. USAGE: $0 [VALID OPTION (1,2 OR 3)]";;
+	*) echo "Invalid option. USAGE: $0 <OPTION> [1, 2, 3]";;
+
 esac
 
