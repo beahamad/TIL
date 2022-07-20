@@ -1,0 +1,30 @@
+Today, 20/07/2022, I learned...
+
+10h02: well, exactly right now I'm participating of a Webinar from RedHat, discussing DEVOPS(!!!!!!), it will be amazing to absorb this knowledge, and here are the notes of it (in portuguese because I'm typing everything I hear):
+
+	- Containers:
+		> Os desenvolvedores precisam enclausurar tudo o que é necessário para o funcionamento da aplicação em um environment, e pode ser buildado em qualquer ambiente, e é essencial para padronizar o ambiente de desenvolvimento com o de produção.
+		> O environment é isolado, que pode executar a aplicação sem interrupção
+		> O container faz deploy muito mais rápido e mais leve pois não se faz necessário instalar um SO toda vez que for criado, e pode ser instalado em qlqr tipo de máquina, desde baremetal a VM's, e garantir que o build é identico para todo ambiente
+		> O reuso é a maior vantagem, pois o build rápido e o uso de imagens para fazer seu deploy facilita bastante a utilização e execução dessas soluções.
+
+	- Kubernetes:
+		> Orquestração de Containers
+		> 3Funcionalidades:
+			= Autoescaling: replicação do environment conforme a necessidade. Vc pode configurar o kubernetes para crescer o ambiente automaticamente para suprir a demanda da aplicação.
+			= Self Healing: se algum problema ocorrer em algum container da applicação, o kubernetes é capaz de detectar e levantar um novo container para consertar o problema.
+			= Networking: localizar e gerenciar a alocação de containers, além da comunicação entre containers que fazem diferentes aplicações mas estão relacionados; Distribuição de carga entre containers que são replicados e não haver sobrecarga de serviços.
+
+	- OpenShift:
+		> O que é: solução da RedHat que é uma plataforma de apĺicações; ele tem um repositório de containers que auxilia no monitoramento dos clusters, troubleshooting com service mesh, automação de operações e builds com integração direta com a IDE.
+		> Kubernetes faz parte da solução, o OpenShift faz uso de todas as vantagens da orquestração de containers, e aplica todas as funcionalidades necessárias para a gerência de uma aplicação em diferentes níveis de desenvolvimentos em uma só ferramenta.
+		> Aplica CI/CD Pipeline:
+			VERSION CONTROL > BUILD > UNIT TEST> DEPLOY > AUTO TEST > DEPLOY TO FUNCTION > MONITOR + OBSERVE
+		> Impacto:
+			= Deployment frequency: quantas vezes a aplicação foi jogada em produção
+			= Lead time for change: quanto tempo demora para o código ir do controle de versão até chegar em produção
+			= Time to restore service: quanto tempo demora em média para restaurar um serviço
+			= Change failure rate: a taxa de falha de alterações, testam quantas vezes uma mudança pode causar falha
+		> TIP: https://kubebyexample.com/ e os cursos do RedHat Academy
+		> REDHAT SYSADIMIN 1 (RH124) REDHAT SYSADIMIN 2 (RH134) e REDHAT OPENSHIFT 1 (DO180)
+
